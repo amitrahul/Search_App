@@ -15,7 +15,6 @@ const ProductItem = ({ product }: ProductItemType) => {
   const [showViewProduct, setShowViewProduct] = useState(false);
 
   const navigate = useNavigate();
-  console.log(product);
   return (
     <div className="product_item">
       <div className="product_img_container">
