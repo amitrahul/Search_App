@@ -1,0 +1,13 @@
+.suggestionWrapper {
+  ul li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    margin-left: 1.4rem;
+  }
+}
