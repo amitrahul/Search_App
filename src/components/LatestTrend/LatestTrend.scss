@@ -1,0 +1,61 @@
+.latestTrendWrapper {
+  position: absolute;
+  width: 70%;
+  height: 65%;
+  z-index: 1;
+  top: 280px;
+  left: 260px;
+  background-color: white;
+  border-radius: 15px;
+  h2 {
+    margin-left: 1.4rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.latest_trend_products {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.latest_trend_product {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+
+  img {
+    border-radius: 0.4rem;
+    width: 10rem;
+    height: 70%;
+  }
+
+  div {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .latest_trend_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .latest_trend_products {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  .latest_trend_product img {
+    width: 100%;
+  }
+}
