@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./LatestTrend.scss";
+import PopularSuggestion from "../PopularSuggestion/PopularSuggestion";
 import { latestTrendApi } from "../../db/data";
 import { latestTrendProducts } from "../../db/types/products";
 import { useNavigate } from "react-router-dom";
@@ -40,6 +41,7 @@ const LatestTrend: React.FC = () => {
           );
         })}
       </div>
+      <PopularSuggestion />
     </div>
   );
 };
