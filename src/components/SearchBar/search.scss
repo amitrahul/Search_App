@@ -1,0 +1,40 @@
+@use "../../styles/colors" as color;
+
+.searchWrapper {
+  width: 70vw;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: auto;
+
+  svg {
+    position: absolute;
+    border-radius: 10px;
+    right: 21vw;
+    border: none;
+    color: color.$color-black;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px color.$color-black;
+    &:hover {
+      background-color: aliceblue;
+    }
+    &:active {
+      transform: scale(0.8);
+      box-shadow: 0 0 5px color.$color-black;
+    }
+  }
+  .searchField {
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 30px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px color.$color-black;
+
+    &:focus {
+      box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+      outline: none;
+    }
+  }
+}
