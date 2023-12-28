@@ -41,6 +41,7 @@ class ProductsApi {
         discountPrice: 2200,
         productsReviews: 150,
         productRating: 1,
+        productName: "Cleveland",
       },
       {
         id: "5e887b209c28ac3dd97f6db5",
